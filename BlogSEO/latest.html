@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Latest articles | PiPol</title>
+  <meta name="description" content="Read the latest satirical news and commentary from PiPol.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <a href="index.html" aria-label="PiPol home"><img src="assets/pipol-logo.png" alt="PiPol logo" class="logo-img"></a>
+        <p class="tagline">Your trusted source for totally <span class="strike">not</span> satire news!</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="latest.html" class="nav-item" aria-current="page">Latest articles</a>
+      <a href="about.html" class="nav-item">About us</a>
+      <a href="contact.html" class="nav-item">Contact us</a>
+    </div>
+  </nav>
+
+  <main class="container page-content">
+    <h1 class="page-title">Latest articles</h1>
+    <section class="cards" aria-label="Latest articles">
+      <article class="card">
+        <img src="assets/article1-thumbnail.png" alt="Illustration for the first article" class="card-img">
+        <h2 class="card-title">Serious Saturdays: 5 Reasons to Leave the Philippines</h2>
+        <p class="card-desc">A rant from one of our lead writers.</p>
+        <a href="articles/article1.html" class="card-link">Read article</a>
+      </article>
+      
+      <article class="card">
+        <img src="assets/article2-thumbnail.png" alt="Illustration for the second article" class="card-img">
+        <h2 class="card-title">Places in the Philippines That Don't Feel Real</h2>
+        <p class="card-desc">What we will show may shock you!</p>
+        <a href="articles/article2.html" class="card-link">Read article</a>
+      </article>
+
+      <article class="card">
+        <img src="assets/article3.svg" alt="Illustration for the third article" class="card-img">
+        <h2 class="card-title">Breaking: more breaking news</h2>
+        <p class="card-desc">The story develops exactly as dramatically as expected.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© 2006-<span id="year"></span> PiPol — All rights reserved.</p></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About us | PiPol</title>
+  <meta name="description" content="Learn about PiPol, a satirical newsroom covering the Philippines.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <a href="index.html" aria-label="PiPol home"><img src="assets/pipol-logo.png" alt="PiPol logo" class="logo-img"></a>
+        <p class="tagline">Your trusted source for totally <span class="strike">not</span> satire news!</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="latest.html" class="nav-item">Latest articles</a>
+      <a href="about.html" class="nav-item" aria-current="page">About us</a>
+      <a href="contact.html" class="nav-item">Contact us</a>
+    </div>
+  </nav>
+
+  <main class="about container page-content">
+    <div class="about-text">
+      <h1 class="about-title">What is <span class="brand-word"><span class="brand-p">P</span><span class="brand-i">i</span><span class="brand-pol">Pol</span></span>?</h1>
+      <p class="lead">We are a satirical newsroom dedicated to making sense, and fun of the absolute circus that is the Philippines. If it's chaotic, absurd, or making headlines for all the wrong reasons, we're writing about it.</p>
+      <h2 class="about-subhead">Disclaimers:</h2>
+      <p class="muted">- All content published on this site is entirely fictional, exaggerated, and meant for entertainment and comedic purposes only.</p>
+      <p class="muted">- If you mistake our articles for actual journalism, we gently suggest checking your pulse, your reading comprehension, and your calendar.</p>
+      <p class="muted">- Any similarity to actual persons, living or dead or politicians acting like clowns is purely coincidental, highly ironic, and entirely predictable.</p>
+    </div>
+    <div class="about-media">
+      <img src="assets/pipol-logo.png" alt="PiPol logo" class="about-logo">
+      <div class="tagline-decor"><span class="quote">“</span><span class="decor-word decor-blue">PHILIPPINE</span><span class="decor-word decor-red">POLITICS</span><span class="quote">”</span></div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><p>© 2006-<span id="year"></span> PiPol — All rights reserved.</p></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

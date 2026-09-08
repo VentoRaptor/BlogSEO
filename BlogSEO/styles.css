@@ -1,0 +1,125 @@
+/* Basic reset and layout */
+:root{
+  --white:#ffffff;
+  --blue:#dfeeff;
+  --dark:#111;
+  --muted:#666;
+  --max-width:1100px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:var(--dark)}
+body{background:#fff}
+
+.site-header{background:#ff3b3b; padding:18px 24px; color:#0b0b0b}
+.header-inner{max-width:var(--max-width);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.brand{display:flex;align-items:center;gap:18px}
+.logo-img{height:120px;width:auto;display:block;background:#fff;border-radius:12px;padding:8px;box-shadow:0 2px 10px rgba(0,0,0,0.08)}
+.tagline{margin:0;padding:10px 14px;font-size:20px;color:#0b0b0b;background:#fff;border:2px solid #111}
+.tagline .strike{text-decoration:line-through;opacity:0.9}
+
+.main-nav{background:#fff;border-top:4px solid #000;border-bottom:2px solid #000;margin-top:18px}
+.nav-inner{max-width:var(--max-width);margin:0 auto;display:flex;justify-content:space-around;align-items:center;padding:18px 20px}
+.main-nav .nav-item{color:#000;text-decoration:none;font-weight:800;font-size:24px;padding:6px 8px}
+
+.container{max-width:var(--max-width);margin:36px auto;padding:0 20px}
+.welcome{min-height:520px;display:grid;grid-template-columns:1fr 430px;gap:72px;align-items:center;padding-top:48px;padding-bottom:64px}
+.welcome-copy{max-width:620px}
+.welcome-kicker{margin:0 0 8px;color:var(--muted);font-size:20px;font-weight:800;text-transform:uppercase;letter-spacing:1px}
+.welcome-title{margin:0;font-size:78px;line-height:0.95;font-weight:900}
+.welcome-text{font-size:25px;line-height:1.35;margin:24px 0 14px}
+.welcome-intro{max-width:540px;color:var(--muted);font-size:18px;line-height:1.6;margin:0 0 28px}
+.welcome-button{display:inline-block;background:#ff3b3b;border:2px solid #111;color:#fff;text-decoration:none;font-size:18px;font-weight:800;padding:13px 20px}
+.welcome-button:hover{background:#d92525}
+.welcome-media{text-align:center}
+.welcome-logo{width:min(100%,390px);height:auto;border-radius:12px}
+.welcome-caption{margin:18px auto 0;max-width:330px;font-size:18px;font-weight:800;line-height:1.35}
+.page-content{min-height:420px}
+.page-title{font-size:44px;margin:0 0 28px;font-weight:800}
+.cards{display:flex;gap:48px;justify-content:space-between}
+.card{flex:1;text-align:center}
+.card-img{width:100%;height:180px;object-fit:cover;border:3px solid #111}
+.card-title{font-size:26px;margin:18px 0 6px;font-weight:800}
+.card-desc{margin:0;color:var(--muted);font-size:18px}
+.card-link{display:inline-block;margin-top:18px;color:#111;font-weight:800;text-decoration:underline;text-underline-offset:4px}
+
+/* Article page */
+.article-page{padding:34px 20px 56px}
+.article{max-width:1020px;margin:0 auto}
+.article-intro{text-align:center}
+.article-hero-image{display:block;width:min(100%,475px);height:290px;object-fit:cover;margin:0 auto 28px;background:#59d4d9}
+.article-intro h1{max-width:850px;margin:0 auto 20px;font-size:34px;line-height:1.15}
+.article-intro p{max-width:900px;margin:0 auto;color:#222;font-size:20px;line-height:1.55}
+.article-introduction{max-width:900px;margin:28px auto 0;color:#222;font-size:20px;line-height:1.55}
+.article-introduction p{margin:0}
+.article-body{margin-top:64px}
+.article-row{display:grid;grid-template-columns:360px 1fr;gap:34px;align-items:center;margin-bottom:56px}
+.article-row-image-right{grid-template-columns:1fr 360px}
+.article-section-image{display:block;width:100%;height:220px;object-fit:cover;background:#59d4d9}
+.article-section-copy h2{margin:0 0 12px;font-size:26px;line-height:1.15}
+.article-section-copy p{margin:0;font-size:19px;line-height:1.45}
+.article-end{text-align:center;margin-top:10px}
+.article-back-link{display:inline-block;color:#111;font-size:18px;font-weight:800;text-decoration:underline;text-underline-offset:4px}
+
+/* About section */
+.about{display:grid;grid-template-columns:1fr 420px;gap:48px;align-items:center;padding:28px 20px;border-top:1px solid #ddd}
+.about-text{padding-right:10px}
+.about-title{font-size:44px;margin:0 0 16px;font-weight:800}
+.brand-word{font-weight:900}
+.brand-p{color:#526fff}
+.brand-i{color:#ffd447}
+.brand-pol{color:#ff3038}
+.lead{font-size:18px;line-height:1.6;color:#222;margin:0 0 22px}
+.about-subhead{font-size:22px;margin:8px 0}
+.muted{color:var(--muted);font-size:16px}
+
+.about-media{text-align:center}
+.about-logo{max-width:320px;width:100%;height:auto;border-radius:8px}
+.tagline-decor{margin-top:18px;display:flex;align-items:center;justify-content:center;gap:12px}
+.decor-word{font-size:34px;font-weight:900;padding:6px 10px;transform:skewX(-8deg)}
+.decor-blue{color:#3b6bff;text-shadow:1px 1px 0 rgba(0,0,0,0.04)}
+.decor-red{color:#ff3b3b;text-shadow:1px 1px 0 rgba(0,0,0,0.04)}
+.quote{font-size:34px;color:#111}
+
+.contact-page{max-width:760px}
+.contact-page .lead{max-width:650px}
+.contact-form{display:grid;gap:8px;max-width:620px;margin-top:28px}
+.contact-form label{font-weight:800;font-size:17px;margin-top:10px}
+.contact-form input,.contact-form textarea{font:inherit;font-size:16px;border:2px solid #111;border-radius:4px;padding:10px;background:#fff}
+.contact-form textarea{resize:vertical}
+.contact-form button{justify-self:start;margin-top:12px;border:2px solid #111;background:#ff3b3b;color:#fff;font:inherit;font-weight:800;padding:11px 20px;cursor:pointer}
+.contact-form button:hover{background:#d92525}
+
+
+.site-footer{border-top:1px solid #ddd;padding:18px 0;text-align:center;color:var(--muted)}
+
+/* Responsive */
+@media (max-width:900px){
+  .cards{flex-direction:column;gap:28px}
+  .header-inner{flex-direction:column;align-items:flex-start;gap:10px}
+  .brand{align-items:flex-start}
+  .logo-img{height:88px}
+  .tagline{font-size:16px}
+  .nav-inner{flex-direction:column;gap:10px;padding:12px}
+  .main-nav .nav-item{font-size:18px}
+  .card-img{height:160px}
+  .article-page{padding-top:28px}
+  .article-hero-image{height:220px}
+  .article-intro h1{font-size:30px}
+  .article-intro p{font-size:18px}
+  .article-introduction{font-size:18px}
+  .article-body{margin-top:44px}
+  .article-row,.article-row-image-right{grid-template-columns:1fr;gap:18px;margin-bottom:42px}
+  .article-section-image{height:220px}
+  .article-row-image-right .article-section-copy{order:2}
+  .article-row-image-right .article-section-image{order:1}
+  .article-section-copy h2{font-size:24px}
+  .article-section-copy p{font-size:18px}
+  .welcome{grid-template-columns:1fr;gap:28px;min-height:0;padding-top:32px;padding-bottom:42px}
+  .welcome-media{order:-1}
+  .welcome-title{font-size:58px}
+  .welcome-text{font-size:21px}
+  .about{grid-template-columns:1fr;gap:20px;padding:20px}
+  .about-media{order: -1}
+  .about-title{font-size:32px}
+  .page-title{font-size:32px}
+}
