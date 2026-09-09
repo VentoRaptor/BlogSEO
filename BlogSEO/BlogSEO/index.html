@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PiPol — Your trusted source for totally not satire news</title>
+  <meta name="description" content="PiPol — short-form satirical news and commentary. Read latest articles.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="assets/pipol-logo.png" alt="PiPol logo" class="logo-img">
+        <p class="tagline">Your trusted source for totally <span class="strike">not</span> satire news!</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <a href="latest.html" class="nav-item">Latest articles</a>
+      <a href="about.html" class="nav-item">About us</a>
+      <a href="contact.html" class="nav-item">Contact us</a>
+    </div>
+  </nav>
+
+  <main class="welcome container">
+    <div class="welcome-copy">
+      <p class="welcome-kicker">Welcome to</p>
+      <h1 class="welcome-title"><span class="brand-word"><span class="brand-p">P</span><span class="brand-i">i</span><span class="brand-pol">Pol</span></span></h1>
+      <p class="welcome-text">Your trusted source for totally <span class="strike">not</span> satire news from the Philippines.</p>
+      <p class="welcome-intro">Step into the newsroom for sharp observations, absurd headlines, and stories that make sense of the chaos.</p>
+      <a href="latest.html" class="welcome-button">Read the latest articles</a>
+    </div>
+
+    <div class="welcome-media">
+      <img src="assets/pipol-logo.png" alt="PiPol logo" class="welcome-logo">
+      <p class="welcome-caption">Philippine politics, with a little perspective.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2006-<span id="year"></span> PiPol — All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
