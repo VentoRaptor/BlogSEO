@@ -23,6 +23,7 @@ body{background:#fff}
 
 .container{max-width:var(--max-width);margin:36px auto;padding:0 20px}
 .welcome{min-height:520px;display:grid;grid-template-columns:1fr 430px;gap:72px;align-items:center;padding-top:48px;padding-bottom:64px}
+.references-page{margin-top:48px;margin-bottom:48px}
 .welcome-copy{max-width:620px}
 .welcome-kicker{margin:0 0 8px;color:var(--muted);font-size:20px;font-weight:800;text-transform:uppercase;letter-spacing:1px}
 .welcome-title{margin:0;font-size:78px;line-height:0.95;font-weight:900}
@@ -57,6 +58,9 @@ body{background:#fff}
 .article-section-image{display:block;width:100%;height:220px;object-fit:cover;background:#59d4d9}
 .article-section-copy h2{margin:0 0 12px;font-size:26px;line-height:1.15}
 .article-section-copy p{margin:0;font-size:19px;line-height:1.45}
+.article-conclusion{max-width:900px;margin:0 auto 56px}
+.article-conclusion h2{margin:0 0 12px;font-size:26px;line-height:1.15}
+.article-conclusion p{margin:0;font-size:19px;line-height:1.45}
 .article-end{text-align:center;margin-top:10px}
 .article-back-link{display:inline-block;color:#111;font-size:18px;font-weight:800;text-decoration:underline;text-underline-offset:4px}
 
@@ -113,6 +117,8 @@ body{background:#fff}
   .article-row-image-right .article-section-image{order:1}
   .article-section-copy h2{font-size:24px}
   .article-section-copy p{font-size:18px}
+  .article-conclusion h2{font-size:24px}
+  .article-conclusion p{font-size:18px}
   .welcome{grid-template-columns:1fr;gap:28px;min-height:0;padding-top:32px;padding-bottom:42px}
   .welcome-media{order:-1}
   .welcome-title{font-size:58px}
